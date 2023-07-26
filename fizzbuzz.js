@@ -1,4 +1,8 @@
 function fizzbuzz(number) {
+  // if(typeof(number) == "number");
+  console.log(number);
+  // Agregado de comprobacion del dato ingresado
+  if(Number.isInteger(number) && Number.isSafeInteger(number)){
     if (number % 15 == 0) {
       return "FizzBuzz";
     }
@@ -8,8 +12,14 @@ function fizzbuzz(number) {
     if (number % 5 == 0) {
       return "Buzz";
     } 
-    return number;
+    return number.toString();
+  }
+  return "No es un numero";
 }
+
+// console.log(fizzbuzz(99999999999999999999999999999999999999999999999999999999));
+
+// console.log('a' % 3);
 
 function main() {
   for (let num = 1; num <= 100; num++){
