@@ -1,6 +1,6 @@
 function fizzbuzz(number) {
   // if(typeof(number) == "number");
-  console.log(number);
+  // console.log(number);
   // Agregado de comprobacion del dato ingresado
   if(Number.isInteger(number) && Number.isSafeInteger(number)){
     if (number % 15 == 0) {
@@ -21,13 +21,15 @@ function fizzbuzz(number) {
 
 // console.log('a' % 3);
 
-function main() {
-  for (let num = 1; num <= 100; num++){
+function main(x) {
+  for (let num = 1; num <= x; num++){
     console.log(fizzbuzz(num));
   } 
 }
 
-main();
+// main(100);
+
+module.exports = fizzbuzz;
 
 /*
 Devuelve el resultado de la division
